@@ -16,7 +16,6 @@ class TestSuits(unittest.TestCase):
         """
         Method to test all the suits options types.
         """
-
         actual = set(suit.value for suit in Suits)
         expected = {"Clubs", "Hearts", "Diamonds", "Spades"}
 

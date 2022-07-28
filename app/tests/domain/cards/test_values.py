@@ -16,7 +16,6 @@ class TestValues(unittest.TestCase):
         """
         Method to test all the values options types.
         """
-
         actual = set(value.value for value in Values)
         expected = {"2", "3", "4", "5", "6", "7", "8", "9", "T", "J", "Q", "K", "A"}
 
