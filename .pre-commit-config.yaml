@@ -27,3 +27,11 @@ repos:
         language: system
         pass_filenames: false
         stages: [commit]
+-   repo: local
+    hooks:
+      - id: pycache
+        name: removing __pycache__ files
+        entry: bash -c 'find . | grep -E "(/__pycache__$|\.pyc$|\.pyo$)" | xargs rm -rf'
+        language: system
+        pass_filenames: false
+        stages: [commit]
