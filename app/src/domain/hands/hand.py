@@ -18,7 +18,8 @@ class Hand:
 
     Attributes
     ----------
-    cards : List[Cards]
+    cards : List[Card]
+        A list containing all the hand cards.
     """
 
     cards: List[Card]
