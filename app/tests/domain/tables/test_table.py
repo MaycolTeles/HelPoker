@@ -13,7 +13,7 @@ class TestTable(unittest.TestCase):
     Class to test the 'Table' Class.
     """
 
-    def test_poker_table_constructor(self) -> None:
+    def test_table_constructor(self) -> None:
         """
         Method to test the '__init__' (or constructor) method.
         """
