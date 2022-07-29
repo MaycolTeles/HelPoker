@@ -3,11 +3,12 @@ Module containing the 'Table' Class.
 """
 
 # TYPING IMPORTS
-from typing import List
+from __future__ import annotations
+from typing import List, TYPE_CHECKING
 
-from src.domain.players import Player
-
-from ..cards import Card
+if TYPE_CHECKING:
+    from ..cards import Card
+    from ..players import Player
 
 # MODULE IMPORTS
 from dataclasses import dataclass, field
