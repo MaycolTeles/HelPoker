@@ -33,10 +33,10 @@ class Table:
 
     players: List[Player]
 
-    # NOT NEEDED TO PASS WHEN INSTANTIATING. DEFINED IN THE '__post_init__' METHOD.
+    # NO NEED TO PASS WHEN INSTANTIATING. DEFINED IN THE '__post_init__' METHOD.
     total_players: int = field(init=False)
 
-    # NOT NEEDED TO PASS WHEN INSTANTIATING.
+    # NO NEED TO PASS WHEN INSTANTIATING.
     board_cards: List[Card] = field(init=False)
 
     def __post_init__(self):
