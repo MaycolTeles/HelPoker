@@ -1,22 +1,22 @@
 """
-Module containing the 'TestPositions' Class.
+Module containing the 'TestPosition' Class.
 """
 
 import unittest
 
-from src.domain.tables import Positions
+from src.domain.tables import Position
 
 
-class TestPositions(unittest.TestCase):
+class TestPosition(unittest.TestCase):
     """
-    Class to test the 'Positions' Class.
+    Class to test the 'Position' Class.
     """
 
-    def test_positions_types(self) -> None:
+    def test_Position_types(self) -> None:
         """
-        Method to test all the positions options types.
+        Method to test all the Position options types.
         """
-        actual = set(position.value for position in Positions)
+        actual = set(position.value for position in Position)
         expected = {
             "UTG",
             "UTG+1",

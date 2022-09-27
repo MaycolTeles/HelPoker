@@ -4,7 +4,7 @@ Module containing the 'TestTable' Class.
 
 import unittest
 
-from src.domain.tables import Table, Positions
+from src.domain.tables import Table, Position
 from src.domain.players import Player
 
 
@@ -20,15 +20,15 @@ class TestTable(unittest.TestCase):
         test_players = [
             Player(
                 name="Player_1",
-                total_chips=10_000,
+                current_stack_size=10_000,
                 current_tournament_place=1,
-                current_table_position=Positions.BIG_BLIND,
+                current_table_position=Position.BIG_BLIND,
             ),
             Player(
                 name="Player_2",
-                total_chips=9_000,
+                current_stack_size=9_000,
                 current_tournament_place=2,
-                current_table_position=Positions.BUTTON,
+                current_table_position=Position.BUTTON,
             ),
         ]
 
