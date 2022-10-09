@@ -4,7 +4,7 @@ Module containing the 'TestValue' Class.
 
 import unittest
 
-from src.domain.entities.cards import Value
+from src.entities.cards import Value
 
 
 class TestValue(unittest.TestCase):

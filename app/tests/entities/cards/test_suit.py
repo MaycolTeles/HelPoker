@@ -4,7 +4,7 @@ Module containing the 'TestSuit' Class.
 
 import unittest
 
-from src.domain.entities.cards import Suit
+from src.entities.cards import Suit
 
 
 class TestSuit(unittest.TestCase):

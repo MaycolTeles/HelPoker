@@ -4,9 +4,8 @@ Module containing the 'TestPlayer' Class.
 
 import unittest
 
-from src.domain.entities.players import Player
-from src.domain.entities.tables import Position
-from ...mocks import MockHand
+from src.entities.players import Player
+from src.entities.tables import Position
 
 
 class TestPlayer(unittest.TestCase):
@@ -14,17 +13,16 @@ class TestPlayer(unittest.TestCase):
     Class to test the 'Player' Class.
     """
 
-    @classmethod
-    def setUpClass(cls) -> None:
+    def setUp(self) -> None:
         """
         Method to set up the variables to test.
 
-        This method will execute only once and before all tests.
+        This method will execute once and before each test.
         """
-        cls.test_name = "Maycol"
-        cls.test_current_stack_size = 5_000
-        cls.test_current_tournament_place = 300
-        cls.test_current_table_position = Position.BUTTON
+        self.test_name = "Maycol"
+        self.test_current_stack_size = 5_000
+        self.test_current_tournament_place = 300
+        self.test_current_table_position = Position.BUTTON
 
     def test_player_constructor(self) -> None:
         """
@@ -68,7 +66,7 @@ class TestPlayer(unittest.TestCase):
         """
         Method to test the '__str__' (string representation) method with the player hand.
         """
-        test_hand = MockHand()
+        test_hand = "A of Spades, A of Hearths"
 
         actual = str(
             Player(

@@ -4,8 +4,8 @@ Module containing the 'TestHand' Class.
 
 import unittest
 
-from src.domain.entities.hands import Hand
-from src.domain.entities.cards import Card, Suit, Value
+from src.entities.hands import Hand
+from src.entities.cards import Card, Suit, Value
 
 
 class TestHand(unittest.TestCase):

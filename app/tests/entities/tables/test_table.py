@@ -4,8 +4,8 @@ Module containing the 'TestTable' Class.
 
 import unittest
 
-from src.domain.entities.tables import Table, Position
-from src.domain.entities.players import Player
+from src.entities.tables import Table, Position
+from src.entities.players import Player
 
 
 class TestTable(unittest.TestCase):

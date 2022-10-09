@@ -4,7 +4,7 @@ Module containing the 'TestPosition' Class.
 
 import unittest
 
-from src.domain.entities.tables import Position
+from src.entities.tables import Position
 
 
 class TestPosition(unittest.TestCase):

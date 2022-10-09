@@ -5,7 +5,7 @@ Module containing the 'TestGameGameSession' Class.
 import unittest
 from datetime import time
 
-from src.domain.entities.games import GameSession
+from src.entities.games import GameSession
 
 
 class TestGameSession(unittest.TestCase):

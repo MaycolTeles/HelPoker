@@ -4,7 +4,7 @@ Module containing the 'TestCard' Class.
 
 import unittest
 
-from src.domain.entities.cards import Card, Suit, Value
+from src.entities.cards import Card, Suit, Value
 
 
 class TestCard(unittest.TestCase):
@@ -36,6 +36,8 @@ class TestCard(unittest.TestCase):
 
         actual = str(Card(value=test_card_value, suit=test_card_suit))
 
-        expected = f"{test_card_value.value} of {test_card_suit.value}"
+        expected_value = test_card_value.value
+        expected_suit = test_card_suit.value
 
-        self.assertEqual(actual, expected)
+        self.assertIn(expected_value, actual)
+        self.assertIn(expected_suit, actual)
