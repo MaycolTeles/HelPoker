@@ -21,3 +21,9 @@ clean-test:
 	rm -fr .tox/
 	rm -f .coverage
 	rm -fr htmlcov/
+
+tests:
+	python3.10 -m flake8 app/ &	python3.10 -m pytest -vv --cov=. --cov-report=html
+
+run:
+	python3.10 app/run.py
