@@ -12,13 +12,12 @@ repos:
       stages: [commit]
 -   repo: local
     hooks:
-    - id: pytest
-      name: pytest
-      language: system
-      entry: pytest -v
-      always_run: true
-      pass_filenames: false
-      stages: [commit]
+      - id: test
+        name: test
+        entry: make tests
+        language: system
+        pass_filenames: false
+        stages: [commit]
 -   repo: local
     hooks:
       - id: requirements

@@ -14,10 +14,12 @@ class Suit(Enum):
     - CLUB = 'Clubs';
     - HEART = 'Hearts';
     - DIAMOND = 'Diamonds';
-    - SPADE = 'Spades'.
+    - SPADE = 'Spades';
+    - ANY = 'Any' -> The suit is irrelevant.
     """
 
     CLUB = "Clubs"
     HEART = "Hearts"
     DIAMOND = "Diamonds"
     SPADE = "Spades"
+    ANY = "Any"

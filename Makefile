@@ -22,8 +22,14 @@ clean-test:
 	rm -f .coverage
 	rm -fr htmlcov/
 
-tests:
-	python3.10 -m flake8 app/ &	python3.10 -m pytest -vv --cov=. --cov-report=html
+format:
+	black app/
+
+lint:
+	python3.10 -m flake8 app/
+
+tests: lint
+	python3.10 -m pytest -vv --cov=. --cov-report=html
 
 run:
 	python3.10 app/run.py

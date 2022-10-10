@@ -17,6 +17,6 @@ class TestSuit(unittest.TestCase):
         Method to test all the suits options types.
         """
         actual = set(suit.value for suit in Suit)
-        expected = {"Clubs", "Hearts", "Diamonds", "Spades"}
+        expected = {"Clubs", "Hearts", "Diamonds", "Spades", "Any"}
 
         self.assertEqual(actual, expected)

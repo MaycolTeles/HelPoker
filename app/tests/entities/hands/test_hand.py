@@ -21,6 +21,7 @@ class TestHand(unittest.TestCase):
         test_card_2 = Card(Value.ACE, Suit.HEART)
 
         actual = str(Hand([test_card_1, test_card_2]))
-        expected = "A of Clubs and A of Hearts"
 
-        self.assertEqual(actual, expected)
+        self.assertIn(str(test_card_1), actual)
+        self.assertIn(str(test_card_2), actual)
+        self.assertIn("OFF-SUITED", actual)
