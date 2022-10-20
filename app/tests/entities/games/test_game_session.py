@@ -13,7 +13,7 @@ class TestGameSession(unittest.TestCase):
     Class to test the 'GameSession' Class.
     """
 
-    def test_game_constructor(self) -> None:
+    def test_game_session_constructor(self) -> None:
         """
         Method to test the '__init__' (or constructor) method.
         """

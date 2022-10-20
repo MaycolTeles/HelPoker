@@ -2,4 +2,4 @@
 __init__ file to export the classes below.
 """
 
-from .main import main
+from .check_ranges import CheckOpeningRangesUseCase

@@ -12,7 +12,7 @@ class TestPosition(unittest.TestCase):
     Class to test the 'Position' Class.
     """
 
-    def test_Position_types(self) -> None:
+    def test_position_types(self) -> None:
         """
         Method to test all the Position options types.
         """
